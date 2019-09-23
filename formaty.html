@@ -1,0 +1,62 @@
+﻿<script type="text/javascript">
+
+function red(){
+			var size = document.getElementById('procent').value;
+			var style = document.getElementById('choose').value;
+		
+			if (style==="kursywa") 
+			{
+				document.getElementById('example').style = "color:red; font-size:"+size+"%; font-style: italic;" ;
+			}
+			else
+			{
+				document.getElementById('example').style = "color:red; font-size:"+size+"%" ;		
+			}
+			
+		}
+		
+function green(){
+			var size = document.getElementById('procent').value;
+			var style = document.getElementById('choose').value;
+		
+			if (style==="kursywa") 
+			{
+				document.getElementById('example').style = "color:green; font-size:"+size+"%; font-style: italic;" ;
+			}
+			else
+			{
+				document.getElementById('example').style = "color:green; font-size:"+size+"%" ;		
+			}
+			
+		}
+
+function blue(){
+			var size = document.getElementById('procent').value;
+			var style = document.getElementById('choose').value;
+		
+			if (style==="kursywa") 
+			{
+				document.getElementById('example').style = "color:blue; font-size:"+size+"%; font-style: italic;" ;
+			}
+			else
+			{
+				document.getElementById('example').style = "color:blue; font-size:"+size+"%" ;		
+			}
+			
+		}		
+
+</script>
+
+		<p>Podaj rozmiar tekstu w procentach: <input type="number" id="procent">%</p>
+			<p>
+				<select id="choose">
+					<option>prosty</option>
+					<option>kursywa</option>
+				</select>
+		
+			</p>
+		<p>Jakim kolorem sformatować tekst? Wybierz przycisk</p>
+			<input type="submit" id="button1" value="" style="background-color:red;" onclick="red()">
+			<input type="submit" id="button2" value="" style="background-color:green;" onclick="green()">
+			<input type="submit" id="button3" value="" style="background-color:blue;" onclick="blue()">
+		<p id="example">To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript.</p>
